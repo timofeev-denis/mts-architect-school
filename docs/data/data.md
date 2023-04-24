@@ -8,89 +8,112 @@
 ```plantuml
 @startuml
 ' Логическая модель данных в варианте UML Class Diagram (альтернатива ER-диаграмме).
-namespace ShoppingCart {
 
- class ShoppingCart
- {
-  id : string
-  createDate : datetime
-  updateDate : datetime
-  customer : Customer
-  price : ShoppingCartPrice
-  cartItems : CartItem[]
- }
+namespace HelloConf {
 
- class ShoppingCartPrice
+ class User
  {
-  type : CartItemPrice
- }
- class CartItemPrice
- {
-  type : CartItemPriceType
+   id : bigint
+   firstName: string
+   lastName : string
+   authorities : UserAuthority[]
+   email : string
+   createdAt : datetime
+   updatedAt : datetime
  }
 
- enum CartPriceType
+ class UserAuthority
  {
-  total
-  grandTotal
-  offeringDiscount
-  couponsDiscount
+   id : string
+   user : User
+   authority : Authority
  }
 
- class CartItem
+ class SpeakerProfile 
  {
-  id : string
-  quantity : int
-  offering : Offering
-  relationship : CartItemRelationShip[]
-  price : CartItemPrice[]
-  status : CartItemStatus
+   id : bigint
+   user : User
+   bio : string
+   reports : Report[]
+   createdAt : datetime
+   updatedAt : datetime
  }
 
-  class Customer
+ class ReviewerProfile 
  {
-  id : string
+   id : bigint
+   user : User
+   bio : string
+   reports : Report[]
+   createdAt : datetime
+   updatedAt : datetime
  }
- 
- class Offering
+
+ class Report 
  {
-  id : string
-  isQuantifiable : boolean
-  actionType : OfferingActionType
-  validFor : ValidFor
+   id : bigint
+   status : ReportStatus
+   speakers : SpeakerProfile[]
+   reviewComments : ReviewComment[]
+   performedAt : datetime
+   createdAt : datetime
+   updateAt : datetime
  }
-  
- class ProductSpecificationRef
+
+ class ReviewComment
  {
-  id : string
+   id:  bigint
+   report : Report
+   writtenBy : User
+   createdAt : datetime
+   updatedAt : datetime
  }
- 
- ShoppingCart *-- "1..*" ShoppingCartPrice
- ShoppingCartPrice -- CartPriceType
- ShoppingCart *-- "*" CartItem
- CartItem *-- "*" CartItemPrice
- CartItemPrice -- CartPriceType
- CartItem *-- "1" Offering
- Offering *-- "1" ProductSpecificationRef
- Offering *-- "0..1" ProductConfiguration
- ShoppingCart *-- "1" Customer
+
+ class Conference
+ {
+   id : bigint
+   name : string
+   conductionDate : date
+   schedule : Schedule[]
+   createdAt: datetime
+   updatedAt: datetime
+ }
+
+ class Schedule
+ {
+   id : bigint
+   report : Report
+   performedAt: datetime
+   createdAt : datetime
+   updatedAt : datetime
+ }
+
+ enum ReportStatus 
+ {
+   new,
+   draft,
+   approved
+ }
+
+ enum Authority
+ {
+   user,
+   speaker,
+   reviewer
+ }
+
+  Conference o-- Report
+  SpeakerProfile o--o "0..*" Report
+  ReviewComment --o Report
+  Schedule .. Report
+  Report *-- ReportStatus
+  Schedule o-- Conference
+  User <|-- SpeakerProfile
+  User <|-- ReviewerProfile
+  User o-- UserAuthority
+  UserAuthority *-- Authority
 }
 
-namespace Ordering {
- ProductOrder *-- OrderItem
- OrderItem *-- Product
- Product *-- ProductSpecificationRef
- ProductOrder *-- Party
-}
 
-namespace ProductCatalog {
- ShoppingCart.ProductSpecificationRef ..> ProductSpecification : ref
- Ordering.ProductSpecificationRef ..> ProductSpecification : ref
-}
-
-namespace CX {
- ShoppingCart.Customer ..> Customer : ref
- Ordering.Party ..> Customer : ref
-}
 @enduml
 ```
