@@ -147,7 +147,8 @@ fc --> UC3
 Подробнее: https://confluence.mts.ru/pages/viewpage.action?pageId=421162308
 -->
 - [ADR.001 Определение категории системы](adr/adr-001.md)
-- [ADR.001 Выбор шаблона интеграции](adr/adr-002.md)
+- [ADR.002 Механизм отправки уведомлений](adr/adr-002.md)
+- [ADR.003 Выбор шаблона интеграции](adr/adr-003.md)
 
 ### [Контекст решения](context/context.md)
 
