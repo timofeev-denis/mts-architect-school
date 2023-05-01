@@ -37,7 +37,7 @@ Rel_D(speaker, conference_service, "Подаёт заявку на доклад,
 Rel_D(committee_member, conference_service, "Оценивает доклады", "WebUI")
 Rel_D(administrator, conference_service, "Ведёт расписание, выполняет администрирование", "WebUI")
 Rel_R(conference_service, notification_queue, "Отправка сообщений (Уведомление)", "AMQP")
-Rel_R(notification_queue, notification_service, "Получение сообщений (Уведомление)", "AMQP")
+Rel_R(notification_queue, notification_service, "Передача сообщений (Уведомление)", "AMQP")
 Rel_D(notification_service, notification_db, "Сохранение журнала отправки уведомлений", "JDBC, SQL")
 Rel(conference_service, conference_db, "Сохранение докладов \n(Доклад)\n \nСохранение комментариев \n(Комментарий)\n \n Сохранение расписания \n(Расписание)", "JDBC, SQL")
 
