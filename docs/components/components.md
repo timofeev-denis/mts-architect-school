@@ -18,26 +18,32 @@ Person(committee_member, "Член ПК", "Специалист, отбираю�
 Person(administrator, "Админстратор", "Пользователь с максимальными правами")
 
 System_Boundary(c, "HelloConf") {
-   Container(conference_service, "Конференция", "Java, Spring Boot, Thymeleaf, HTML, CSS", "Автоматизация проведения конференций")
-
-   ContainerDb(conference_db, "Пользователи и доклады", "PostgreSQL", "", $tags = "storage")
+   Boundary(conference_context, "Подготовка докладов. Конференция. Участники") {
+        Container(conference_service, "Конференция", "Java, Spring Boot, Thymeleaf, HTML, CSS", "Автоматизация проведения конференций")
+        ContainerDb(conference_db, "Пользователи и доклады", "PostgreSQL", "", $tags = "storage")
+   }
 
    ContainerQueue(notification_queue, "Очередь сообщений", "RabbitMQ", "Команды на отправку уведомлений")
 
-   Container(notification_service, "Уведомления", "Java, Spring Boot", "Сервис отправки уведомлений")
-
-   ContainerDb(notification_db, "Журнал рассылки", "PostgreSQL", "", $tags = "storage")
+   Boundary(notification_context, "Уведомления") {
+        Container(notification_service, "Уведомления", "Java, Spring Boot", "Сервис отправки уведомлений")
+        ContainerDb(notification_db, "Журнал рассылки", "PostgreSQL", "", $tags = "storage")
+   }
 }
 
 System_Ext(mail_system, "SMTP-сервер", "Почтовый сервер")
 System_Ext(youtube, "YouTube", "Стриминговый сервис. Видеохостинг")
 
+Lay_R(conference_service, notification_queue)
+Lay_R(notification_queue, notification_context)
+Lay_R(notification_queue, notification_service)
+
 Rel_D(visitor, conference_service, "Читает информацию о конференции, смотрит доклады", "WebUI")
 Rel_D(speaker, conference_service, "Подаёт заявку на доклад, дорабатывает доклад", "WebUI")
 Rel_D(committee_member, conference_service, "Оценивает доклады", "WebUI")
 Rel_D(administrator, conference_service, "Ведёт расписание, выполняет администрирование", "WebUI")
-Rel_R(conference_service, notification_queue, "Отправка сообщений (Уведомление)", "AMQP")
-Rel_R(notification_queue, notification_service, "Передача сообщений (Уведомление)", "AMQP")
+Rel(conference_service, notification_queue, "Отправка сообщений (Уведомление)", "AMQP")
+Rel(notification_queue, notification_service, "Передача сообщений (Уведомление)", "AMQP")
 Rel_D(notification_service, notification_db, "Сохранение журнала отправки уведомлений", "JDBC, SQL")
 Rel(conference_service, conference_db, "Сохранение докладов \n(Доклад)\n \nСохранение комментариев \n(Комментарий)\n \n Сохранение расписания \n(Расписание)", "JDBC, SQL")
 
