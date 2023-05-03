@@ -2,6 +2,7 @@
 <!-- Окружение системы (роли, участники, внешние системы) и связи системы с ним. Диаграмма контекста C4 и текстовое описание. 
 Подробнее: https://confluence.mts.ru/pages/viewpage.action?pageId=375783261
 -->
+## Контекстная диаграмма (C4 Level 1)
 ```plantuml
 @startuml
 !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
@@ -27,3 +28,5 @@ Rel(notificator, administrator, "Отправляет уведомление")
 
 @enduml
 ```
+## Ограниченные контексты
+![Ограниченные контексты](bounded-contexts.png)

@@ -29,8 +29,8 @@ System_Boundary(c, "HelloConf") {
    ContainerDb(notification_db, "Журнал рассылки", "PostgreSQL", "", $tags = "storage")
 }
 
-System_Ext(mail_system, "SMTP-сервер", "Почтовый сервер")  
-System_Ext(youtube, "YouTube", "Стриминговый сервис. Видеохостинг")  
+System_Ext(mail_system, "SMTP-сервер", "Почтовый сервер")
+System_Ext(youtube, "YouTube", "Стриминговый сервис. Видеохостинг")
 
 Rel_D(visitor, conference_service, "Читает информацию о конференции, смотрит доклады", "WebUI")
 Rel_D(speaker, conference_service, "Подаёт заявку на доклад, дорабатывает доклад", "WebUI")
