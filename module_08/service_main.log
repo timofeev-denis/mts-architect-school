@@ -1,0 +1,1216 @@
+service_main          | INFO:     172.23.200.1:38786 - "GET /docs HTTP/1.1" 200 OK
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | INFO:     172.23.200.1:38786 - "GET /openapi.json HTTP/1.1" 200 OK
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | INFO:     172.23.200.1:38802 - "GET /presentationsAndAuthor/test HTTP/1.1" 500 Internal Server Error
+service_main          | ERROR:    Exception in ASGI application
+service_main          | Traceback (most recent call last):
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/uvicorn/protocols/http/httptools_impl.py", line 419, in run_asgi
+service_main          |     result = await app(  # type: ignore[func-returns-value]
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+service_main          |     return await self.app(scope, receive, send)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/fastapi/applications.py", line 271, in __call__
+service_main          |     await super().__call__(scope, receive, send)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/starlette/applications.py", line 118, in __call__
+service_main          |     await self.middleware_stack(scope, receive, send)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/starlette/middleware/errors.py", line 184, in __call__
+service_main          |     raise exc
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/starlette/middleware/errors.py", line 162, in __call__
+service_main          |     await self.app(scope, receive, _send)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/starlette/middleware/exceptions.py", line 79, in __call__
+service_main          |     raise exc
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/starlette/middleware/exceptions.py", line 68, in __call__
+service_main          |     await self.app(scope, receive, sender)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+service_main          |     raise e
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+service_main          |     await self.app(scope, receive, send)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/starlette/routing.py", line 706, in __call__
+service_main          |     await route.handle(scope, receive, send)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/starlette/routing.py", line 276, in handle
+service_main          |     await self.app(scope, receive, send)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/starlette/routing.py", line 66, in app
+service_main          |     response = await func(request)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/fastapi/routing.py", line 237, in app
+service_main          |     raw_response = await run_endpoint_function(
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/fastapi/routing.py", line 163, in run_endpoint_function
+service_main          |     return await dependant.call(**values)
+service_main          |   File "/./service_main.py", line 104, in read_presentation
+service_main          |     presentation = get_presentation(title)
+service_main          |   File "/./service_main.py", line 66, in get_presentation
+service_main          |     presentation = Presentation(**response_presentation.json()[0])
+service_main          | IndexError: list index out of range
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | Moore
+service_main          | INFO:     172.23.200.1:36146 - "GET /presentationsAndAuthor/First%20Presentation HTTP/1.1" 200 OK
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | --- Logging error ---
+service_main          | Traceback (most recent call last):
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/urllib3/connection.py", line 174, in _new_conn
+service_main          |     conn = connection.create_connection(
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/urllib3/util/connection.py", line 72, in create_connection
+service_main          |     for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+service_main          |   File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+service_main          |     for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+service_main          | socket.gaierror: [Errno -3] Temporary failure in name resolution
+service_main          |
+service_main          | During handling of the above exception, another exception occurred:
+service_main          |
+service_main          | Traceback (most recent call last):
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py", line 703, in urlopen
+service_main          |     httplib_response = self._make_request(
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py", line 398, in _make_request
+service_main          |     conn.request(method, url, **httplib_request_kw)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/urllib3/connection.py", line 239, in request
+service_main          |     super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+service_main          |   File "/usr/lib/python3.10/http/client.py", line 1282, in request
+service_main          |     self._send_request(method, url, body, headers, encode_chunked)
+service_main          |   File "/usr/lib/python3.10/http/client.py", line 1328, in _send_request
+service_main          |     self.endheaders(body, encode_chunked=encode_chunked)
+service_main          |   File "/usr/lib/python3.10/http/client.py", line 1277, in endheaders
+service_main          |     self._send_output(message_body, encode_chunked=encode_chunked)
+service_main          |   File "/usr/lib/python3.10/http/client.py", line 1037, in _send_output
+service_main          |     self.send(msg)
+service_main          |   File "/usr/lib/python3.10/http/client.py", line 975, in send
+service_main          |     self.connect()
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/urllib3/connection.py", line 205, in connect
+service_main          |     conn = self._new_conn()
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/urllib3/connection.py", line 186, in _new_conn
+service_main          |     raise NewConnectionError(
+service_main          | urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f6d4dd88250>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+service_main          |
+service_main          | During handling of the above exception, another exception occurred:
+service_main          |
+service_main          | Traceback (most recent call last):
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/requests/adapters.py", line 489, in send
+service_main          |     resp = conn.urlopen(
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py", line 787, in urlopen
+service_main          |     retries = retries.increment(
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/urllib3/util/retry.py", line 592, in increment
+service_main          |     raise MaxRetryError(_pool, url, error or ResponseError(cause))
+service_main          | urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d4dd88250>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+service_main          |
+service_main          | During handling of the above exception, another exception occurred:
+service_main          |
+service_main          | Traceback (most recent call last):
+service_main          |   File "/./service_main.py", line 74, in get_author
+service_main          |     response_author = requests.get("http://" + service_author + "/authors/" + str(id))
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/requests/api.py", line 73, in get
+service_main          |     return request("get", url, params=params, **kwargs)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/requests/api.py", line 59, in request
+service_main          |     return session.request(method=method, url=url, **kwargs)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/requests/sessions.py", line 587, in request
+service_main          |     resp = self.send(prep, **send_kwargs)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/requests/sessions.py", line 701, in send
+service_main          |     r = adapter.send(request, **kwargs)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/requests/adapters.py", line 565, in send
+service_main          |     raise ConnectionError(e, request=request)
+service_main          | requests.exceptions.ConnectionError: HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d4dd88250>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+service_main          |
+service_main          | During handling of the above exception, another exception occurred:
+service_main          |
+service_main          | Traceback (most recent call last):
+service_main          |   File "/usr/lib/python3.10/logging/__init__.py", line 1100, in emit
+service_main          |     msg = self.format(record)
+service_main          |   File "/usr/lib/python3.10/logging/__init__.py", line 943, in format
+service_main          |     return fmt.format(record)
+service_main          |   File "/usr/lib/python3.10/logging/__init__.py", line 678, in format
+service_main          |     record.message = record.getMessage()
+service_main          |   File "/usr/lib/python3.10/logging/__init__.py", line 368, in getMessage
+service_main          |     msg = msg % self.args
+service_main          | TypeError: not all arguments converted during string formatting
+service_main          | Call stack:
+service_main          |   File "<string>", line 1, in <module>
+service_main          |   File "/usr/lib/python3.10/multiprocessing/spawn.py", line 116, in spawn_main
+service_main          |     exitcode = _main(fd, parent_sentinel)
+service_main          |   File "/usr/lib/python3.10/multiprocessing/spawn.py", line 129, in _main
+service_main          |     return self._bootstrap(parent_sentinel)
+service_main          |   File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+service_main          |     self.run()
+service_main          |   File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+service_main          |     self._target(*self._args, **self._kwargs)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/uvicorn/_subprocess.py", line 76, in subprocess_started
+service_main          |     target(sockets=sockets)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/uvicorn/server.py", line 60, in run
+service_main          |     return asyncio.run(self.serve(sockets=sockets))
+service_main          |   File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+service_main          |     return loop.run_until_complete(main)
+service_main          |   File "/usr/lib/python3.10/asyncio/base_events.py", line 633, in run_until_complete
+service_main          |     self.run_forever()
+service_main          |   File "/usr/lib/python3.10/asyncio/base_events.py", line 600, in run_forever
+service_main          |     self._run_once()
+service_main          |   File "/usr/lib/python3.10/asyncio/base_events.py", line 1896, in _run_once
+service_main          |     handle._run()
+service_main          |   File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+service_main          |     self._context.run(self._callback, *self._args)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/uvicorn/protocols/http/httptools_impl.py", line 419, in run_asgi
+service_main          |     result = await app(  # type: ignore[func-returns-value]
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+service_main          |     return await self.app(scope, receive, send)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/fastapi/applications.py", line 271, in __call__
+service_main          |     await super().__call__(scope, receive, send)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/starlette/applications.py", line 118, in __call__
+service_main          |     await self.middleware_stack(scope, receive, send)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/starlette/middleware/errors.py", line 162, in __call__
+service_main          |     await self.app(scope, receive, _send)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/starlette/middleware/exceptions.py", line 68, in __call__
+service_main          |     await self.app(scope, receive, sender)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+service_main          |     await self.app(scope, receive, send)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/starlette/routing.py", line 706, in __call__
+service_main          |     await route.handle(scope, receive, send)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/starlette/routing.py", line 276, in handle
+service_main          |     await self.app(scope, receive, send)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/starlette/routing.py", line 66, in app
+service_main          |     response = await func(request)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/fastapi/routing.py", line 237, in app
+service_main          |     raw_response = await run_endpoint_function(
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/fastapi/routing.py", line 163, in run_endpoint_function
+service_main          |     return await dependant.call(**values)
+service_main          |   File "/./service_main.py", line 105, in read_presentation
+service_main          |     author = get_author(presentation.author_id)
+service_main          |   File "/./circuitbreaker.py", line 159, in wrapper
+service_main          |     return call(function, *args, **kwargs)
+service_main          |   File "/./circuitbreaker.py", line 170, in call
+service_main          |     return func(*args, **kwargs)
+service_main          |   File "/./service_main.py", line 76, in get_author
+service_main          |     logging.warning(">>> Error Connecting:", errc)
+service_main          | Message: '>>> Error Connecting:'
+service_main          | Arguments: (ConnectionError(MaxRetryError("HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d4dd88250>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))")),)
+service_main          | INFO:     172.23.200.1:57888 - "GET /presentationsAndAuthor/First%20Presentation HTTP/1.1" 500 Internal Server Error
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 1
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 1
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 1
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 1
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 1
+service_main          | WARNING:root:
+service_main          | --- Logging error ---
+service_main          | Traceback (most recent call last):
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/urllib3/connection.py", line 174, in _new_conn
+service_main          |     conn = connection.create_connection(
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/urllib3/util/connection.py", line 72, in create_connection
+service_main          |     for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+service_main          |   File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+service_main          |     for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+service_main          | socket.gaierror: [Errno -3] Temporary failure in name resolution
+service_main          |
+service_main          | During handling of the above exception, another exception occurred:
+service_main          |
+service_main          | Traceback (most recent call last):
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py", line 703, in urlopen
+service_main          |     httplib_response = self._make_request(
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py", line 398, in _make_request
+service_main          |     conn.request(method, url, **httplib_request_kw)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/urllib3/connection.py", line 239, in request
+service_main          |     super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+service_main          |   File "/usr/lib/python3.10/http/client.py", line 1282, in request
+service_main          |     self._send_request(method, url, body, headers, encode_chunked)
+service_main          |   File "/usr/lib/python3.10/http/client.py", line 1328, in _send_request
+service_main          |     self.endheaders(body, encode_chunked=encode_chunked)
+service_main          |   File "/usr/lib/python3.10/http/client.py", line 1277, in endheaders
+service_main          |     self._send_output(message_body, encode_chunked=encode_chunked)
+service_main          |   File "/usr/lib/python3.10/http/client.py", line 1037, in _send_output
+service_main          |     self.send(msg)
+service_main          |   File "/usr/lib/python3.10/http/client.py", line 975, in send
+service_main          |     self.connect()
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/urllib3/connection.py", line 205, in connect
+service_main          |     conn = self._new_conn()
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/urllib3/connection.py", line 186, in _new_conn
+service_main          |     raise NewConnectionError(
+service_main          | urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f6d4dd896f0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+service_main          |
+service_main          | During handling of the above exception, another exception occurred:
+service_main          |
+service_main          | Traceback (most recent call last):
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/requests/adapters.py", line 489, in send
+service_main          |     resp = conn.urlopen(
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py", line 787, in urlopen
+service_main          |     retries = retries.increment(
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/urllib3/util/retry.py", line 592, in increment
+service_main          |     raise MaxRetryError(_pool, url, error or ResponseError(cause))
+service_main          | urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d4dd896f0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+service_main          |
+service_main          | During handling of the above exception, another exception occurred:
+service_main          |
+service_main          | Traceback (most recent call last):
+service_main          |   File "/./service_main.py", line 74, in get_author
+service_main          |     response_author = requests.get("http://" + service_author + "/authors/" + str(id))
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/requests/api.py", line 73, in get
+service_main          |     return request("get", url, params=params, **kwargs)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/requests/api.py", line 59, in request
+service_main          |     return session.request(method=method, url=url, **kwargs)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/requests/sessions.py", line 587, in request
+service_main          |     resp = self.send(prep, **send_kwargs)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/requests/sessions.py", line 701, in send
+service_main          |     r = adapter.send(request, **kwargs)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/requests/adapters.py", line 565, in send
+service_main          |     raise ConnectionError(e, request=request)
+service_main          | requests.exceptions.ConnectionError: HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d4dd896f0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+service_main          |
+service_main          | During handling of the above exception, another exception occurred:
+service_main          |
+service_main          | Traceback (most recent call last):
+service_main          |   File "/usr/lib/python3.10/logging/__init__.py", line 1100, in emit
+service_main          |     msg = self.format(record)
+service_main          |   File "/usr/lib/python3.10/logging/__init__.py", line 943, in format
+service_main          |     return fmt.format(record)
+service_main          |   File "/usr/lib/python3.10/logging/__init__.py", line 678, in format
+service_main          |     record.message = record.getMessage()
+service_main          |   File "/usr/lib/python3.10/logging/__init__.py", line 368, in getMessage
+service_main          |     msg = msg % self.args
+service_main          | TypeError: not all arguments converted during string formatting
+service_main          | Call stack:
+service_main          |   File "<string>", line 1, in <module>
+service_main          |   File "/usr/lib/python3.10/multiprocessing/spawn.py", line 116, in spawn_main
+service_main          |     exitcode = _main(fd, parent_sentinel)
+service_main          |   File "/usr/lib/python3.10/multiprocessing/spawn.py", line 129, in _main
+service_main          |     return self._bootstrap(parent_sentinel)
+service_main          |   File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+service_main          |     self.run()
+service_main          |   File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+service_main          |     self._target(*self._args, **self._kwargs)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/uvicorn/_subprocess.py", line 76, in subprocess_started
+service_main          |     target(sockets=sockets)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/uvicorn/server.py", line 60, in run
+service_main          |     return asyncio.run(self.serve(sockets=sockets))
+service_main          |   File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+service_main          |     return loop.run_until_complete(main)
+service_main          |   File "/usr/lib/python3.10/asyncio/base_events.py", line 633, in run_until_complete
+service_main          |     self.run_forever()
+service_main          |   File "/usr/lib/python3.10/asyncio/base_events.py", line 600, in run_forever
+service_main          |     self._run_once()
+service_main          |   File "/usr/lib/python3.10/asyncio/base_events.py", line 1896, in _run_once
+service_main          |     handle._run()
+service_main          |   File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+service_main          |     self._context.run(self._callback, *self._args)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/uvicorn/protocols/http/httptools_impl.py", line 419, in run_asgi
+service_main          |     result = await app(  # type: ignore[func-returns-value]
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+service_main          |     return await self.app(scope, receive, send)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/fastapi/applications.py", line 271, in __call__
+service_main          |     await super().__call__(scope, receive, send)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/starlette/applications.py", line 118, in __call__
+service_main          |     await self.middleware_stack(scope, receive, send)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/starlette/middleware/errors.py", line 162, in __call__
+service_main          |     await self.app(scope, receive, _send)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/starlette/middleware/exceptions.py", line 68, in __call__
+service_main          |     await self.app(scope, receive, sender)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+service_main          |     await self.app(scope, receive, send)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/starlette/routing.py", line 706, in __call__
+service_main          |     await route.handle(scope, receive, send)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/starlette/routing.py", line 276, in handle
+service_main          |     await self.app(scope, receive, send)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/starlette/routing.py", line 66, in app
+service_main          |     response = await func(request)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/fastapi/routing.py", line 237, in app
+service_main          |     raw_response = await run_endpoint_function(
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/fastapi/routing.py", line 163, in run_endpoint_function
+service_main          |     return await dependant.call(**values)
+service_main          |   File "/./service_main.py", line 105, in read_presentation
+service_main          |     author = get_author(presentation.author_id)
+service_main          |   File "/./circuitbreaker.py", line 159, in wrapper
+service_main          |     return call(function, *args, **kwargs)
+service_main          |   File "/./circuitbreaker.py", line 170, in call
+service_main          |     return func(*args, **kwargs)
+service_main          |   File "/./service_main.py", line 76, in get_author
+service_main          |     logging.warning(">>> Error Connecting:", errc)
+service_main          | Message: '>>> Error Connecting:'
+service_main          | Arguments: (ConnectionError(MaxRetryError("HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d4dd896f0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))")),)
+service_main          | INFO:     172.23.200.1:40542 - "GET /presentationsAndAuthor/First%20Presentation HTTP/1.1" 500 Internal Server Error
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 2
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 2
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 2
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 2
+service_main          | WARNING:root:
+service_main          | --- Logging error ---
+service_main          | Traceback (most recent call last):
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/urllib3/connection.py", line 174, in _new_conn
+service_main          |     conn = connection.create_connection(
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/urllib3/util/connection.py", line 72, in create_connection
+service_main          |     for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+service_main          |   File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+service_main          |     for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+service_main          | socket.gaierror: [Errno -3] Temporary failure in name resolution
+service_main          |
+service_main          | During handling of the above exception, another exception occurred:
+service_main          |
+service_main          | Traceback (most recent call last):
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py", line 703, in urlopen
+service_main          |     httplib_response = self._make_request(
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py", line 398, in _make_request
+service_main          |     conn.request(method, url, **httplib_request_kw)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/urllib3/connection.py", line 239, in request
+service_main          |     super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+service_main          |   File "/usr/lib/python3.10/http/client.py", line 1282, in request
+service_main          |     self._send_request(method, url, body, headers, encode_chunked)
+service_main          |   File "/usr/lib/python3.10/http/client.py", line 1328, in _send_request
+service_main          |     self.endheaders(body, encode_chunked=encode_chunked)
+service_main          |   File "/usr/lib/python3.10/http/client.py", line 1277, in endheaders
+service_main          |     self._send_output(message_body, encode_chunked=encode_chunked)
+service_main          |   File "/usr/lib/python3.10/http/client.py", line 1037, in _send_output
+service_main          |     self.send(msg)
+service_main          |   File "/usr/lib/python3.10/http/client.py", line 975, in send
+service_main          |     self.connect()
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/urllib3/connection.py", line 205, in connect
+service_main          |     conn = self._new_conn()
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/urllib3/connection.py", line 186, in _new_conn
+service_main          |     raise NewConnectionError(
+service_main          | urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f6d4dd8a710>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+service_main          |
+service_main          | During handling of the above exception, another exception occurred:
+service_main          |
+service_main          | Traceback (most recent call last):
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/requests/adapters.py", line 489, in send
+service_main          |     resp = conn.urlopen(
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py", line 787, in urlopen
+service_main          |     retries = retries.increment(
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/urllib3/util/retry.py", line 592, in increment
+service_main          |     raise MaxRetryError(_pool, url, error or ResponseError(cause))
+service_main          | urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d4dd8a710>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+service_main          |
+service_main          | During handling of the above exception, another exception occurred:
+service_main          |
+service_main          | Traceback (most recent call last):
+service_main          |   File "/./service_main.py", line 74, in get_author
+service_main          |     response_author = requests.get("http://" + service_author + "/authors/" + str(id))
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/requests/api.py", line 73, in get
+service_main          |     return request("get", url, params=params, **kwargs)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/requests/api.py", line 59, in request
+service_main          |     return session.request(method=method, url=url, **kwargs)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/requests/sessions.py", line 587, in request
+service_main          |     resp = self.send(prep, **send_kwargs)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/requests/sessions.py", line 701, in send
+service_main          |     r = adapter.send(request, **kwargs)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/requests/adapters.py", line 565, in send
+service_main          |     raise ConnectionError(e, request=request)
+service_main          | requests.exceptions.ConnectionError: HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d4dd8a710>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+service_main          |
+service_main          | During handling of the above exception, another exception occurred:
+service_main          |
+service_main          | Traceback (most recent call last):
+service_main          |   File "/usr/lib/python3.10/logging/__init__.py", line 1100, in emit
+service_main          |     msg = self.format(record)
+service_main          |   File "/usr/lib/python3.10/logging/__init__.py", line 943, in format
+service_main          |     return fmt.format(record)
+service_main          |   File "/usr/lib/python3.10/logging/__init__.py", line 678, in format
+service_main          |     record.message = record.getMessage()
+service_main          |   File "/usr/lib/python3.10/logging/__init__.py", line 368, in getMessage
+service_main          |     msg = msg % self.args
+service_main          | TypeError: not all arguments converted during string formatting
+service_main          | Call stack:
+service_main          |   File "<string>", line 1, in <module>
+service_main          |   File "/usr/lib/python3.10/multiprocessing/spawn.py", line 116, in spawn_main
+service_main          |     exitcode = _main(fd, parent_sentinel)
+service_main          |   File "/usr/lib/python3.10/multiprocessing/spawn.py", line 129, in _main
+service_main          |     return self._bootstrap(parent_sentinel)
+service_main          |   File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+service_main          |     self.run()
+service_main          |   File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+service_main          |     self._target(*self._args, **self._kwargs)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/uvicorn/_subprocess.py", line 76, in subprocess_started
+service_main          |     target(sockets=sockets)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/uvicorn/server.py", line 60, in run
+service_main          |     return asyncio.run(self.serve(sockets=sockets))
+service_main          |   File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+service_main          |     return loop.run_until_complete(main)
+service_main          |   File "/usr/lib/python3.10/asyncio/base_events.py", line 633, in run_until_complete
+service_main          |     self.run_forever()
+service_main          |   File "/usr/lib/python3.10/asyncio/base_events.py", line 600, in run_forever
+service_main          |     self._run_once()
+service_main          |   File "/usr/lib/python3.10/asyncio/base_events.py", line 1896, in _run_once
+service_main          |     handle._run()
+service_main          |   File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+service_main          |     self._context.run(self._callback, *self._args)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/uvicorn/protocols/http/httptools_impl.py", line 419, in run_asgi
+service_main          |     result = await app(  # type: ignore[func-returns-value]
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+service_main          |     return await self.app(scope, receive, send)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/fastapi/applications.py", line 271, in __call__
+service_main          |     await super().__call__(scope, receive, send)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/starlette/applications.py", line 118, in __call__
+service_main          |     await self.middleware_stack(scope, receive, send)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/starlette/middleware/errors.py", line 162, in __call__
+service_main          |     await self.app(scope, receive, _send)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/starlette/middleware/exceptions.py", line 68, in __call__
+service_main          |     await self.app(scope, receive, sender)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+service_main          |     await self.app(scope, receive, send)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/starlette/routing.py", line 706, in __call__
+service_main          |     await route.handle(scope, receive, send)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/starlette/routing.py", line 276, in handle
+service_main          |     await self.app(scope, receive, send)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/starlette/routing.py", line 66, in app
+service_main          |     response = await func(request)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/fastapi/routing.py", line 237, in app
+service_main          |     raw_response = await run_endpoint_function(
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/fastapi/routing.py", line 163, in run_endpoint_function
+service_main          |     return await dependant.call(**values)
+service_main          |   File "/./service_main.py", line 105, in read_presentation
+service_main          |     author = get_author(presentation.author_id)
+service_main          |   File "/./circuitbreaker.py", line 159, in wrapper
+service_main          |     return call(function, *args, **kwargs)
+service_main          |   File "/./circuitbreaker.py", line 170, in call
+service_main          |     return func(*args, **kwargs)
+service_main          |   File "/./service_main.py", line 76, in get_author
+service_main          |     logging.warning(">>> Error Connecting:", errc)
+service_main          | Message: '>>> Error Connecting:'
+service_main          | Arguments: (ConnectionError(MaxRetryError("HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d4dd8a710>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))")),)
+service_main          | INFO:     172.23.200.1:40542 - "GET /presentationsAndAuthor/First%20Presentation HTTP/1.1" 500 Internal Server Error
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 3
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 3
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 3
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 3
+service_main          | WARNING:root:
+service_main          | --- Logging error ---
+service_main          | Traceback (most recent call last):
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/urllib3/connection.py", line 174, in _new_conn
+service_main          |     conn = connection.create_connection(
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/urllib3/util/connection.py", line 72, in create_connection
+service_main          |     for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+service_main          |   File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+service_main          |     for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+service_main          | socket.gaierror: [Errno -3] Temporary failure in name resolution
+service_main          |
+service_main          | During handling of the above exception, another exception occurred:
+service_main          |
+service_main          | Traceback (most recent call last):
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py", line 703, in urlopen
+service_main          |     httplib_response = self._make_request(
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py", line 398, in _make_request
+service_main          |     conn.request(method, url, **httplib_request_kw)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/urllib3/connection.py", line 239, in request
+service_main          |     super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+service_main          |   File "/usr/lib/python3.10/http/client.py", line 1282, in request
+service_main          |     self._send_request(method, url, body, headers, encode_chunked)
+service_main          |   File "/usr/lib/python3.10/http/client.py", line 1328, in _send_request
+service_main          |     self.endheaders(body, encode_chunked=encode_chunked)
+service_main          |   File "/usr/lib/python3.10/http/client.py", line 1277, in endheaders
+service_main          |     self._send_output(message_body, encode_chunked=encode_chunked)
+service_main          |   File "/usr/lib/python3.10/http/client.py", line 1037, in _send_output
+service_main          |     self.send(msg)
+service_main          |   File "/usr/lib/python3.10/http/client.py", line 975, in send
+service_main          |     self.connect()
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/urllib3/connection.py", line 205, in connect
+service_main          |     conn = self._new_conn()
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/urllib3/connection.py", line 186, in _new_conn
+service_main          |     raise NewConnectionError(
+service_main          | urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f6d4dd8b730>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+service_main          |
+service_main          | During handling of the above exception, another exception occurred:
+service_main          |
+service_main          | Traceback (most recent call last):
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/requests/adapters.py", line 489, in send
+service_main          |     resp = conn.urlopen(
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py", line 787, in urlopen
+service_main          |     retries = retries.increment(
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/urllib3/util/retry.py", line 592, in increment
+service_main          |     raise MaxRetryError(_pool, url, error or ResponseError(cause))
+service_main          | urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d4dd8b730>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+service_main          |
+service_main          | During handling of the above exception, another exception occurred:
+service_main          |
+service_main          | Traceback (most recent call last):
+service_main          |   File "/./service_main.py", line 74, in get_author
+service_main          |     response_author = requests.get("http://" + service_author + "/authors/" + str(id))
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/requests/api.py", line 73, in get
+service_main          |     return request("get", url, params=params, **kwargs)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/requests/api.py", line 59, in request
+service_main          |     return session.request(method=method, url=url, **kwargs)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/requests/sessions.py", line 587, in request
+service_main          |     resp = self.send(prep, **send_kwargs)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/requests/sessions.py", line 701, in send
+service_main          |     r = adapter.send(request, **kwargs)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/requests/adapters.py", line 565, in send
+service_main          |     raise ConnectionError(e, request=request)
+service_main          | requests.exceptions.ConnectionError: HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d4dd8b730>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+service_main          |
+service_main          | During handling of the above exception, another exception occurred:
+service_main          |
+service_main          | Traceback (most recent call last):
+service_main          |   File "/usr/lib/python3.10/logging/__init__.py", line 1100, in emit
+service_main          |     msg = self.format(record)
+service_main          |   File "/usr/lib/python3.10/logging/__init__.py", line 943, in format
+service_main          |     return fmt.format(record)
+service_main          |   File "/usr/lib/python3.10/logging/__init__.py", line 678, in format
+service_main          |     record.message = record.getMessage()
+service_main          |   File "/usr/lib/python3.10/logging/__init__.py", line 368, in getMessage
+service_main          |     msg = msg % self.args
+service_main          | TypeError: not all arguments converted during string formatting
+service_main          | Call stack:
+service_main          |   File "<string>", line 1, in <module>
+service_main          |   File "/usr/lib/python3.10/multiprocessing/spawn.py", line 116, in spawn_main
+service_main          |     exitcode = _main(fd, parent_sentinel)
+service_main          |   File "/usr/lib/python3.10/multiprocessing/spawn.py", line 129, in _main
+service_main          |     return self._bootstrap(parent_sentinel)
+service_main          |   File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+service_main          |     self.run()
+service_main          |   File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+service_main          |     self._target(*self._args, **self._kwargs)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/uvicorn/_subprocess.py", line 76, in subprocess_started
+service_main          |     target(sockets=sockets)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/uvicorn/server.py", line 60, in run
+service_main          |     return asyncio.run(self.serve(sockets=sockets))
+service_main          |   File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+service_main          |     return loop.run_until_complete(main)
+service_main          |   File "/usr/lib/python3.10/asyncio/base_events.py", line 633, in run_until_complete
+service_main          |     self.run_forever()
+service_main          |   File "/usr/lib/python3.10/asyncio/base_events.py", line 600, in run_forever
+service_main          |     self._run_once()
+service_main          |   File "/usr/lib/python3.10/asyncio/base_events.py", line 1896, in _run_once
+service_main          |     handle._run()
+service_main          |   File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+service_main          |     self._context.run(self._callback, *self._args)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/uvicorn/protocols/http/httptools_impl.py", line 419, in run_asgi
+service_main          |     result = await app(  # type: ignore[func-returns-value]
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+service_main          |     return await self.app(scope, receive, send)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/fastapi/applications.py", line 271, in __call__
+service_main          |     await super().__call__(scope, receive, send)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/starlette/applications.py", line 118, in __call__
+service_main          |     await self.middleware_stack(scope, receive, send)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/starlette/middleware/errors.py", line 162, in __call__
+service_main          |     await self.app(scope, receive, _send)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/starlette/middleware/exceptions.py", line 68, in __call__
+service_main          |     await self.app(scope, receive, sender)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+service_main          |     await self.app(scope, receive, send)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/starlette/routing.py", line 706, in __call__
+service_main          |     await route.handle(scope, receive, send)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/starlette/routing.py", line 276, in handle
+service_main          |     await self.app(scope, receive, send)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/starlette/routing.py", line 66, in app
+service_main          |     response = await func(request)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/fastapi/routing.py", line 237, in app
+service_main          |     raw_response = await run_endpoint_function(
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/fastapi/routing.py", line 163, in run_endpoint_function
+service_main          |     return await dependant.call(**values)
+service_main          |   File "/./service_main.py", line 105, in read_presentation
+service_main          |     author = get_author(presentation.author_id)
+service_main          |   File "/./circuitbreaker.py", line 159, in wrapper
+service_main          |     return call(function, *args, **kwargs)
+service_main          |   File "/./circuitbreaker.py", line 170, in call
+service_main          |     return func(*args, **kwargs)
+service_main          |   File "/./service_main.py", line 76, in get_author
+service_main          |     logging.warning(">>> Error Connecting:", errc)
+service_main          | Message: '>>> Error Connecting:'
+service_main          | Arguments: (ConnectionError(MaxRetryError("HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d4dd8b730>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))")),)
+service_main          | INFO:     172.23.200.1:40542 - "GET /presentationsAndAuthor/First%20Presentation HTTP/1.1" 500 Internal Server Error
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 4
+service_main          | WARNING:root:
+service_main          | --- Logging error ---
+service_main          | Traceback (most recent call last):
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/urllib3/connection.py", line 174, in _new_conn
+service_main          |     conn = connection.create_connection(
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/urllib3/util/connection.py", line 72, in create_connection
+service_main          |     for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+service_main          |   File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+service_main          |     for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+service_main          | socket.gaierror: [Errno -3] Temporary failure in name resolution
+service_main          |
+service_main          | During handling of the above exception, another exception occurred:
+service_main          |
+service_main          | Traceback (most recent call last):
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py", line 703, in urlopen
+service_main          |     httplib_response = self._make_request(
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py", line 398, in _make_request
+service_main          |     conn.request(method, url, **httplib_request_kw)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/urllib3/connection.py", line 239, in request
+service_main          |     super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+service_main          |   File "/usr/lib/python3.10/http/client.py", line 1282, in request
+service_main          |     self._send_request(method, url, body, headers, encode_chunked)
+service_main          |   File "/usr/lib/python3.10/http/client.py", line 1328, in _send_request
+service_main          |     self.endheaders(body, encode_chunked=encode_chunked)
+service_main          |   File "/usr/lib/python3.10/http/client.py", line 1277, in endheaders
+service_main          |     self._send_output(message_body, encode_chunked=encode_chunked)
+service_main          |   File "/usr/lib/python3.10/http/client.py", line 1037, in _send_output
+service_main          |     self.send(msg)
+service_main          |   File "/usr/lib/python3.10/http/client.py", line 975, in send
+service_main          |     self.connect()
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/urllib3/connection.py", line 205, in connect
+service_main          |     conn = self._new_conn()
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/urllib3/connection.py", line 186, in _new_conn
+service_main          |     raise NewConnectionError(
+service_main          | urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f6d4dd88e20>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+service_main          |
+service_main          | During handling of the above exception, another exception occurred:
+service_main          |
+service_main          | Traceback (most recent call last):
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/requests/adapters.py", line 489, in send
+service_main          |     resp = conn.urlopen(
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py", line 787, in urlopen
+service_main          |     retries = retries.increment(
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/urllib3/util/retry.py", line 592, in increment
+service_main          |     raise MaxRetryError(_pool, url, error or ResponseError(cause))
+service_main          | urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d4dd88e20>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+service_main          |
+service_main          | During handling of the above exception, another exception occurred:
+service_main          |
+service_main          | Traceback (most recent call last):
+service_main          |   File "/./service_main.py", line 74, in get_author
+service_main          |     response_author = requests.get("http://" + service_author + "/authors/" + str(id))
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/requests/api.py", line 73, in get
+service_main          |     return request("get", url, params=params, **kwargs)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/requests/api.py", line 59, in request
+service_main          |     return session.request(method=method, url=url, **kwargs)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/requests/sessions.py", line 587, in request
+service_main          |     resp = self.send(prep, **send_kwargs)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/requests/sessions.py", line 701, in send
+service_main          |     r = adapter.send(request, **kwargs)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/requests/adapters.py", line 565, in send
+service_main          |     raise ConnectionError(e, request=request)
+service_main          | requests.exceptions.ConnectionError: HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d4dd88e20>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+service_main          |
+service_main          | During handling of the above exception, another exception occurred:
+service_main          |
+service_main          | Traceback (most recent call last):
+service_main          |   File "/usr/lib/python3.10/logging/__init__.py", line 1100, in emit
+service_main          |     msg = self.format(record)
+service_main          |   File "/usr/lib/python3.10/logging/__init__.py", line 943, in format
+service_main          |     return fmt.format(record)
+service_main          |   File "/usr/lib/python3.10/logging/__init__.py", line 678, in format
+service_main          |     record.message = record.getMessage()
+service_main          |   File "/usr/lib/python3.10/logging/__init__.py", line 368, in getMessage
+service_main          |     msg = msg % self.args
+service_main          | TypeError: not all arguments converted during string formatting
+service_main          | Call stack:
+service_main          |   File "<string>", line 1, in <module>
+service_main          |   File "/usr/lib/python3.10/multiprocessing/spawn.py", line 116, in spawn_main
+service_main          |     exitcode = _main(fd, parent_sentinel)
+service_main          |   File "/usr/lib/python3.10/multiprocessing/spawn.py", line 129, in _main
+service_main          |     return self._bootstrap(parent_sentinel)
+service_main          |   File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+service_main          |     self.run()
+service_main          |   File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+service_main          |     self._target(*self._args, **self._kwargs)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/uvicorn/_subprocess.py", line 76, in subprocess_started
+service_main          |     target(sockets=sockets)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/uvicorn/server.py", line 60, in run
+service_main          |     return asyncio.run(self.serve(sockets=sockets))
+service_main          |   File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+service_main          |     return loop.run_until_complete(main)
+service_main          |   File "/usr/lib/python3.10/asyncio/base_events.py", line 633, in run_until_complete
+service_main          |     self.run_forever()
+service_main          |   File "/usr/lib/python3.10/asyncio/base_events.py", line 600, in run_forever
+service_main          |     self._run_once()
+service_main          |   File "/usr/lib/python3.10/asyncio/base_events.py", line 1896, in _run_once
+service_main          |     handle._run()
+service_main          |   File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+service_main          |     self._context.run(self._callback, *self._args)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/uvicorn/protocols/http/httptools_impl.py", line 419, in run_asgi
+service_main          |     result = await app(  # type: ignore[func-returns-value]
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+service_main          |     return await self.app(scope, receive, send)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/fastapi/applications.py", line 271, in __call__
+service_main          |     await super().__call__(scope, receive, send)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/starlette/applications.py", line 118, in __call__
+service_main          |     await self.middleware_stack(scope, receive, send)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/starlette/middleware/errors.py", line 162, in __call__
+service_main          |     await self.app(scope, receive, _send)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/starlette/middleware/exceptions.py", line 68, in __call__
+service_main          |     await self.app(scope, receive, sender)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+service_main          |     await self.app(scope, receive, send)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/starlette/routing.py", line 706, in __call__
+service_main          |     await route.handle(scope, receive, send)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/starlette/routing.py", line 276, in handle
+service_main          |     await self.app(scope, receive, send)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/starlette/routing.py", line 66, in app
+service_main          |     response = await func(request)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/fastapi/routing.py", line 237, in app
+service_main          |     raw_response = await run_endpoint_function(
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/fastapi/routing.py", line 163, in run_endpoint_function
+service_main          |     return await dependant.call(**values)
+service_main          |   File "/./service_main.py", line 105, in read_presentation
+service_main          |     author = get_author(presentation.author_id)
+service_main          |   File "/./circuitbreaker.py", line 159, in wrapper
+service_main          |     return call(function, *args, **kwargs)
+service_main          |   File "/./circuitbreaker.py", line 170, in call
+service_main          |     return func(*args, **kwargs)
+service_main          |   File "/./service_main.py", line 76, in get_author
+service_main          |     logging.warning(">>> Error Connecting:", errc)
+service_main          | Message: '>>> Error Connecting:'
+service_main          | Arguments: (ConnectionError(MaxRetryError("HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d4dd88e20>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))")),)
+service_main          | INFO:     172.23.200.1:40542 - "GET /presentationsAndAuthor/First%20Presentation HTTP/1.1" 500 Internal Server Error
+service_main          | WARNING:root:Circuit "get_author" is "open", failures: 5
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "open", failures: 5
+service_main          | WARNING:root:
+service_main          | CRITICAL:root:Circuit OPEN
+service_main          | INFO:     172.23.200.1:40542 - "GET /presentationsAndAuthor/First%20Presentation HTTP/1.1" 200 OK
+service_main          | WARNING:root:Circuit "get_author" is "open", failures: 5
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "open", failures: 5
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "open", failures: 5
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "open", failures: 5
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "open", failures: 5
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "open", failures: 5
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "open", failures: 5
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "open", failures: 5
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "half_open", failures: 5
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "half_open", failures: 5
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "half_open", failures: 5
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "half_open", failures: 5
+service_main          | WARNING:root:
+service_main          | --- Logging error ---
+service_main          | Traceback (most recent call last):
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/urllib3/connection.py", line 174, in _new_conn
+service_main          |     conn = connection.create_connection(
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/urllib3/util/connection.py", line 72, in create_connection
+service_main          |     for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+service_main          |   File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+service_main          |     for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+service_main          | socket.gaierror: [Errno -3] Temporary failure in name resolution
+service_main          |
+service_main          | During handling of the above exception, another exception occurred:
+service_main          |
+service_main          | Traceback (most recent call last):
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py", line 703, in urlopen
+service_main          |     httplib_response = self._make_request(
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py", line 398, in _make_request
+service_main          |     conn.request(method, url, **httplib_request_kw)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/urllib3/connection.py", line 239, in request
+service_main          |     super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+service_main          |   File "/usr/lib/python3.10/http/client.py", line 1282, in request
+service_main          |     self._send_request(method, url, body, headers, encode_chunked)
+service_main          |   File "/usr/lib/python3.10/http/client.py", line 1328, in _send_request
+service_main          |     self.endheaders(body, encode_chunked=encode_chunked)
+service_main          |   File "/usr/lib/python3.10/http/client.py", line 1277, in endheaders
+service_main          |     self._send_output(message_body, encode_chunked=encode_chunked)
+service_main          |   File "/usr/lib/python3.10/http/client.py", line 1037, in _send_output
+service_main          |     self.send(msg)
+service_main          |   File "/usr/lib/python3.10/http/client.py", line 975, in send
+service_main          |     self.connect()
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/urllib3/connection.py", line 205, in connect
+service_main          |     conn = self._new_conn()
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/urllib3/connection.py", line 186, in _new_conn
+service_main          |     raise NewConnectionError(
+service_main          | urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f6d4d4bc850>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+service_main          |
+service_main          | During handling of the above exception, another exception occurred:
+service_main          |
+service_main          | Traceback (most recent call last):
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/requests/adapters.py", line 489, in send
+service_main          |     resp = conn.urlopen(
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py", line 787, in urlopen
+service_main          |     retries = retries.increment(
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/urllib3/util/retry.py", line 592, in increment
+service_main          |     raise MaxRetryError(_pool, url, error or ResponseError(cause))
+service_main          | urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d4d4bc850>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+service_main          |
+service_main          | During handling of the above exception, another exception occurred:
+service_main          |
+service_main          | Traceback (most recent call last):
+service_main          |   File "/./service_main.py", line 74, in get_author
+service_main          |     response_author = requests.get("http://" + service_author + "/authors/" + str(id))
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/requests/api.py", line 73, in get
+service_main          |     return request("get", url, params=params, **kwargs)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/requests/api.py", line 59, in request
+service_main          |     return session.request(method=method, url=url, **kwargs)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/requests/sessions.py", line 587, in request
+service_main          |     resp = self.send(prep, **send_kwargs)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/requests/sessions.py", line 701, in send
+service_main          |     r = adapter.send(request, **kwargs)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/requests/adapters.py", line 565, in send
+service_main          |     raise ConnectionError(e, request=request)
+service_main          | requests.exceptions.ConnectionError: HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d4d4bc850>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+service_main          |
+service_main          | During handling of the above exception, another exception occurred:
+service_main          |
+service_main          | Traceback (most recent call last):
+service_main          |   File "/usr/lib/python3.10/logging/__init__.py", line 1100, in emit
+service_main          |     msg = self.format(record)
+service_main          |   File "/usr/lib/python3.10/logging/__init__.py", line 943, in format
+service_main          |     return fmt.format(record)
+service_main          |   File "/usr/lib/python3.10/logging/__init__.py", line 678, in format
+service_main          |     record.message = record.getMessage()
+service_main          |   File "/usr/lib/python3.10/logging/__init__.py", line 368, in getMessage
+service_main          |     msg = msg % self.args
+service_main          | TypeError: not all arguments converted during string formatting
+service_main          | Call stack:
+service_main          |   File "<string>", line 1, in <module>
+service_main          |   File "/usr/lib/python3.10/multiprocessing/spawn.py", line 116, in spawn_main
+service_main          |     exitcode = _main(fd, parent_sentinel)
+service_main          |   File "/usr/lib/python3.10/multiprocessing/spawn.py", line 129, in _main
+service_main          |     return self._bootstrap(parent_sentinel)
+service_main          |   File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+service_main          |     self.run()
+service_main          |   File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+service_main          |     self._target(*self._args, **self._kwargs)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/uvicorn/_subprocess.py", line 76, in subprocess_started
+service_main          |     target(sockets=sockets)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/uvicorn/server.py", line 60, in run
+service_main          |     return asyncio.run(self.serve(sockets=sockets))
+service_main          |   File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+service_main          |     return loop.run_until_complete(main)
+service_main          |   File "/usr/lib/python3.10/asyncio/base_events.py", line 633, in run_until_complete
+service_main          |     self.run_forever()
+service_main          |   File "/usr/lib/python3.10/asyncio/base_events.py", line 600, in run_forever
+service_main          |     self._run_once()
+service_main          |   File "/usr/lib/python3.10/asyncio/base_events.py", line 1896, in _run_once
+service_main          |     handle._run()
+service_main          |   File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+service_main          |     self._context.run(self._callback, *self._args)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/uvicorn/protocols/http/httptools_impl.py", line 419, in run_asgi
+service_main          |     result = await app(  # type: ignore[func-returns-value]
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+service_main          |     return await self.app(scope, receive, send)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/fastapi/applications.py", line 271, in __call__
+service_main          |     await super().__call__(scope, receive, send)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/starlette/applications.py", line 118, in __call__
+service_main          |     await self.middleware_stack(scope, receive, send)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/starlette/middleware/errors.py", line 162, in __call__
+service_main          |     await self.app(scope, receive, _send)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/starlette/middleware/exceptions.py", line 68, in __call__
+service_main          |     await self.app(scope, receive, sender)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+service_main          |     await self.app(scope, receive, send)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/starlette/routing.py", line 706, in __call__
+service_main          |     await route.handle(scope, receive, send)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/starlette/routing.py", line 276, in handle
+service_main          |     await self.app(scope, receive, send)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/starlette/routing.py", line 66, in app
+service_main          |     response = await func(request)
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/fastapi/routing.py", line 237, in app
+service_main          |     raw_response = await run_endpoint_function(
+service_main          |   File "/usr/local/lib/python3.10/dist-packages/fastapi/routing.py", line 163, in run_endpoint_function
+service_main          |     return await dependant.call(**values)
+service_main          |   File "/./service_main.py", line 105, in read_presentation
+service_main          |     author = get_author(presentation.author_id)
+service_main          |   File "/./circuitbreaker.py", line 159, in wrapper
+service_main          |     return call(function, *args, **kwargs)
+service_main          |   File "/./circuitbreaker.py", line 170, in call
+service_main          |     return func(*args, **kwargs)
+service_main          |   File "/./service_main.py", line 76, in get_author
+service_main          |     logging.warning(">>> Error Connecting:", errc)
+service_main          | Message: '>>> Error Connecting:'
+service_main          | Arguments: (ConnectionError(MaxRetryError("HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d4d4bc850>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))")),)
+service_main          | INFO:     172.23.200.1:34068 - "GET /presentationsAndAuthor/First%20Presentation HTTP/1.1" 500 Internal Server Error
+service_main          | WARNING:root:Circuit "get_author" is "open", failures: 6
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "open", failures: 6
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "open", failures: 6
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "open", failures: 6
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "open", failures: 6
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "open", failures: 6
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "open", failures: 6
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "open", failures: 6
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "open", failures: 6
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "open", failures: 6
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "half_open", failures: 6
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "half_open", failures: 6
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "half_open", failures: 6
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "half_open", failures: 6
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "half_open", failures: 6
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "half_open", failures: 6
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "half_open", failures: 6
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "half_open", failures: 6
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "half_open", failures: 6
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "half_open", failures: 6
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "half_open", failures: 6
+service_main          | WARNING:root:
+service_main          | Moore
+service_main          | INFO:     172.23.200.1:36532 - "GET /presentationsAndAuthor/First%20Presentation HTTP/1.1" 200 OK
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
